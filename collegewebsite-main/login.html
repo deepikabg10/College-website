@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https:fonts.googleapis.com/css2?
+    family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    
+    
+      <div class="hero" >
+        <nav>
+          <a href="index.html"><img src="images/logo2.jpg"></a>
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hidemenu()"></i> 
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="course.html">COURSE</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+             <li><a href="login.html">LOGIN</a></li>
+              
+              
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+              </div>
+                <div class="social-icons">
+                    <img src="fb.png" alt="">
+                    <img src="tw.png" alt="">
+                    <img src="gp.png" alt="">
+                
+            </div>
+            <form  id="login" class="input-group" >
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder=" Enter Password" required>
+                <input type="checkbox" class="checkbox" ><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group" >
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field"  placeholder="Enter the password" required>
+                <input type="checkbox" class="checkbox" ><span>I Agree To The Terms & Conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        
+    </div>
+     
+     
+
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur omnis doloremque, <br>deserunt molestiae odit aperiam voluptas minus facilis magnam possimus.</p>
+
+         <div class="icons">
+             <i class="fa fa-facebook"></i></i>
+             <i class="fa fa-twitter"></i></i>
+             <i class="fa fa-linkedin"></i></i>
+             <i class="fa fa-instagram"></i></i>
+            
+         </div>
+         <p>Made<i class="fa fa-heart-o"> </i>by  Diamond</p>
+     </section>
+
+    <script>
+        var navlinks = document.getElementById("nav-links")
+        
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+     <script>
+
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      function register(){
+          x.style.left = "-400px";
+          y.style.left = "50px";
+          z.style.left = "110px";
+      }
+      function login(){
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>
